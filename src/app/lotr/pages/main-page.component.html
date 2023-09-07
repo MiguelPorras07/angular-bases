@@ -1,0 +1,15 @@
+<h1>LOtR Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <lotr-list [characterList]="characters"
+               (onDelete)="onDeleteCharacter($event)"></lotr-list>
+  </div>
+
+  <div class="col">
+
+    <lotr-add-character (onNewCharacter)="onNewCharacter($event)" ></lotr-add-character>
+
+  </div>
+</div>
